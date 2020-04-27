@@ -1,10 +1,10 @@
 package main
 
-func StringInSlice(str string, list []string) bool {
-	for _, v := range list {
-		if v == str {
-			return true
-		}
+import "testing"
+
+func TestStringInSlice(t *testing.T) {
+
+	if StringInSlice("test", []string{"test"}) == false {
+		t.Fatal("String must contains in array")
 	}
-	return false
 }

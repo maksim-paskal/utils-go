@@ -3,8 +3,9 @@ package main
 import "testing"
 
 func TestStringInSlice(t *testing.T) {
+	utils := Utils{}
 
-	if !StringInSlice("test", []string{"test"}) {
+	if !utils.stringInSlice("test", []string{"test"}) {
 		t.Fatal("String must contains in array")
 	}
 }

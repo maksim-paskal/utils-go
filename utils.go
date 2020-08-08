@@ -3,7 +3,7 @@ package utils
 import (
 	"bytes"
 	"encoding/json"
-	"html/template"
+	"text/template"
 
 	"github.com/Masterminds/sprig"
 	"gopkg.in/yaml.v2"
